@@ -1,11 +1,5 @@
-.container {
-  display: flex;
-
-
-}
-
 .header {
-  display: flex;
+  display: inline-flex;
   width: 100%
   font-family: Verdana;
   font-size: 14px;
@@ -19,9 +13,10 @@
   color: MediumAquamarine;
 }
 
-nav span {
+nav {
   display: inline-block;
-  margin: 0 auto;
+  align-content: flex-end;
+
 
 }
 
