@@ -4,6 +4,8 @@
   font-size: 14px;
   font-weight: bold;
   position: fixed;
+  align-content: center;
+  width: 100%;
 }
 
 .logo {
