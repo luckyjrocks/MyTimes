@@ -6,10 +6,13 @@
   position: fixed;
 }
 
-.logo span {
+.logo {
   display: inline-block;
-  color: MediumAquamarine;
   border: 2px solid black;
+}
+
+.logo span {
+  color: MediumAquamarine;
 }
 
 .header nav {
