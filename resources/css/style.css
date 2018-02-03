@@ -9,7 +9,7 @@
 .logo span {
   display: inline-block;
   color: MediumAquamarine;
-  border: 2px black;
+  border: 2px solid black;
 }
 
 .header nav {
