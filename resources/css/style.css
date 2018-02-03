@@ -5,18 +5,13 @@
   font-weight: bold;
 }
 
-.logo span {
+.logo {
   color: MediumAquamarine;
-  justify-content: center;
-  align-items: center;
 
 }
 
 .nav1 {
   display: inline-block;
+  justify-content: flex-end;
 
-}
-
-span a {
-  color: black;
 }
