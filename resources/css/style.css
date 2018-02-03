@@ -5,12 +5,12 @@ header {
   font-weight: bold;
 }
 
-img {
+span .logo {
   color: MediumAquamarine;
 
 }
 
-.nav1 span {
+.nav1 {
   display: inline-block;
 
 }
