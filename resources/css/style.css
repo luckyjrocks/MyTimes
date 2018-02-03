@@ -7,17 +7,16 @@
 
 .logo span {
   color: MediumAquamarine;
-  display: inline-block;
-  align-content: center;
   justify-content: center;
-
-
+  align-items: center;
 
 }
 
-.nav1 span a {
+.nav1 {
   display: inline-block;
-  align-items: flex-end;
-  color: black;
 
+}
+
+span a {
+  color: black;
 }
