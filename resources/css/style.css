@@ -23,7 +23,6 @@
   flex-grow: 1;
   padding: 0 auto;
   padding-left: 20px;
-  border: 1px solid black;
 }
 
 .logo img {
@@ -50,12 +49,30 @@ a {
   color: black;
 }
 
-.content {
+.main-content {
+  display: flex;
   margin-top: 85px;
+  padding-top: 40px;
 }
 
-.content,.column-large,.lead-story,.img-content,.stories,.story,.fall-season,.camera-man
-{
+.column-large {
+  width: 630px;
+}
+
+.column-medium {
+  width: 300px;
+}
+
+.column-small{
+  width: 240px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+div {
   border: 1px solid black;
-  padding: 1px;
 }
