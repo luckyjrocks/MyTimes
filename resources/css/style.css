@@ -1,25 +1,61 @@
+.container {
+  display: flex;
+}
+
 .header {
-  display: inline-flex;
-  width: 100%
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 5;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  border-bottom: 1px solid black;
+  background-color: white;
+
+}
+
+.logo {
+  display: flex;
   align-items: center;
+  flex-grow: 1;
+  padding: 0 auto;
+  padding-left: 20px;
+  border: 1px solid black;
+}
+
+.logo img {
+  margin-right: 10px;
 }
 
 .logo span {
   color: MediumAquamarine;
+
 }
 
-nav {
-  display: inline-block;
-  align-content: flex-end;
+.header nav {
+  display: block;
+  padding-right: 50px;
+}
 
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
 
 }
 
 a {
   color: black;
+}
+
+.content {
+  margin-top: 85px;
+}
+
+.content,.column-large,.lead-story,.img-content,.stories,.story,.fall-season,.camera-man
+{
+  border: 1px solid black;
+  padding: 1px;
 }
