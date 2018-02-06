@@ -1,4 +1,8 @@
-.container {
+body {
+  margin-top: 0px;
+  }
+
+  .container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -133,7 +137,6 @@ a {
 
 .medium .story {
   width: 300px;
-  display: block;
   justify-content: space-between;
 }
 
@@ -154,16 +157,14 @@ a {
   flex-direction: column;
 }
 
-.small h2 {
+.newsbites h2 {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 35px;
-  display: block;
 }
 
-.small p {
-  display: block;
+.newsbites p {
   background-color: whitesmoke;
   font-family: Verdana;
   font-size: 12px;
@@ -171,7 +172,6 @@ a {
   border-bottom: 1px solid black;
   margin: 0;
   padding: 10px;
-
 }
 
 .img-content {
