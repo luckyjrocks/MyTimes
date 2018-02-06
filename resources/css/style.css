@@ -1,8 +1,7 @@
-
 .container {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  width: 100%;
 }
 
 .header {
@@ -56,152 +55,139 @@ a {
   display: flex;
   margin-top: 85px;
   padding-top: 40px;
-  width: auto;
-
-}
-
-.column.large {
-  width: 830px;
-  flex: 1 3 auto;
-}
-
-.column.large .stories {
-  display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: row;
-  justify-content: space-around;
-
-}
-
-.column.large .story {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 60px 0 20px;
-}
-
-
-.column.medium {
-  min-width: 500px;
-  flex: 1 0 auto;
-}
-
-.column.medium .story {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 30px;
-
-}
-
-.column.small {
-  width: 340px;
-  flex: 1 1 auto;
-}
-
-.column.small .story {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  margin-right: 60px;
+  margin-right: 30px;
 }
 
-.lead-story .img-content {
-  height: 300px;
+.large {
+  width: 630px;
+  margin-bottom: 30px;
+}
+
+.mainstory {
+  display: flex;
   background-image: url('../attachments/mainstory.png');
-  background-color: lightblue;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 300px;
+  width: 630px;
+
+}
+
+.mainstory .headline {
+  display: block;
   font-size: 40px;
-}
-
-.catceo {
-  display: flex;
-  height: 300px;
-  background-image: url('../attachments/catceo.png');
-  background-color: lightblue;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.cookie {
-  display: flex;
-  background-image: url('../attachments/cookie.png');
-  height: 300px;
-  min-width: 300px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-items: flex-end;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: bold;
-  color: black;
+  text-align: left;
+  padding-left: 5px;
+  width: 100%;
+  height: 50%;
 }
 
 .fallseason {
   display: flex;
-  height: 300px;
   background-image: url('../attachments/fallseason.png');
-  background-color: lightblue;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 60px 0 0;
-  text-align: center;
+  height: 300px;
+  width: 100%;
+  justify-content: center;
 }
 
 .cameraman {
   display: flex;
-  height: 300px;
   background-image: url('../attachments/cameraman.png');
-  background-color: lightblue;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 60px 0 0;
-  text-align: center;
+  height: 300px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20%;
 }
 
+.large .stories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.large .story {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+  margin-top: 20px;
+
+}
+
+.medium {
+  width: 300px;
+}
+
+.medium .stories {
+  width: 300px;
+  display: block;
+}
+
+.medium .story {
+  width: 300px;
+  display: block;
+  justify-content: space-between;
+}
+
+.catceo {
+  display: flex;
+  background-image: url('../attachments/catceo.png');
+  height: 300px;
+  justify-content: center;
+}
+
+.small {
+  width: 240px;
+
+}
+
+.small .story {
+  display: flex;
+  flex-direction: column;
+}
+
+.small h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 35px;
+  display: block;
+}
+
+.small p {
+  display: block;
+  background-color: whitesmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: dimgray;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 10px;
+
+}
 
 .img-content {
-  color: white;
+  display: block;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
-  padding-left: 5px;
-
-
+  color: white;
+  text-align: center;
 }
 
-.lead-story,.story {
+.text-content {
+  display: block;
   font-family: Georgia;
   font-size: 17px;
   color: black;
-}
-
-.newsbiteslist {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0 0;
-}
-
-.newsbiteslist p {
-  background-color: whitesmoke;
-  font-family: Verdana;
-  font-size: 14px;
-  color: dimgray;
-  padding: 10px;
-  margin: 0;
-  border-bottom: 1px solid black;
 }
 
 .footer {
@@ -210,7 +196,6 @@ a {
   align-items: center;
   justify-content: center;
   height: 300px;
-  width: 100%;
   background-color: MediumAquamarine;
   margin: auto;
   font-family: Verdana;
@@ -225,6 +210,7 @@ a {
   margin-top: 20px;
 
 }
+
 .footer .text-content {
   display: flex;
   padding-right: 20px;
