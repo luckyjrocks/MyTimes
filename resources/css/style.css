@@ -2,6 +2,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .header {
@@ -83,12 +84,14 @@ a {
 
 .column.medium {
   width: 500px;
-  flex: 1 2 auto;
+  flex: 1 0 auto;
 }
 
 .column.medium .story {
   display: flex;
   flex-direction: column;
+  width: auto;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 30px;
 
