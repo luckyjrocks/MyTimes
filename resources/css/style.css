@@ -1,5 +1,7 @@
+
 .container {
   display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -53,24 +55,62 @@ a {
   display: flex;
   margin-top: 85px;
   padding-top: 40px;
+  width: auto;
+
 }
 
 .column.large {
-  width: 630px;
+  width: 830px;
+  flex: 1 3 auto;
 }
 
-.column.medium {
+.column.large .stories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.column.large .story {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 60px 0 20px;
+}
+
+
+.column.medium {
+  width: 500px;
+  flex: 1 2 auto;
+}
+
+.column.medium .story {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
 }
 
 .column.small {
-  width: 240px;
+  width: 340px;
+  flex: 1 1 auto;
+}
+
+.column.small .story {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
+  margin-right: 60px;
 }
 
 .lead-story .img-content {
@@ -87,6 +127,8 @@ a {
   height: 300px;
   background-image: url('../attachments/catceo.png');
   background-color: lightblue;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
@@ -94,8 +136,9 @@ a {
   display: flex;
   background-image: url('../attachments/cookie.png');
   height: 300px;
-  background-repeat: no-repeat;
+  min-width: 300px;
   background-size: cover;
+  background-repeat: no-repeat;
   align-items: flex-end;
   justify-content: center;
   font-size: 16px;
@@ -142,22 +185,6 @@ a {
   color: black;
 }
 
-.column.large .stories {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-.story {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  align-items: stretch;
-  justify-content: space-between;
-  margin: 60px 0 0;
-}
-
 .newsbiteslist {
   display: flex;
   flex-direction: column;
@@ -174,6 +201,43 @@ a {
   border-bottom: 1px solid black;
 }
 
-div {
-  border 1px solid black;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+.footer .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+.footer .text-content {
+  display: flex;
+  padding-right: 20px;
+  margin-right: 10px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+
+}
+
+.footer nav {
+
+}
+
+.copyright {
+
 }
